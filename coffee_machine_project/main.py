@@ -1,5 +1,3 @@
-from menu import MENU
-
 report = {
             'water': 300,
             'milk': 200,
