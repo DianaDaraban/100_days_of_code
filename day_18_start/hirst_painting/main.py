@@ -19,13 +19,21 @@ rgb_list = [(203, 165, 107), (151, 73, 47), (52, 93, 125), (170, 153, 40), (222,
 tim = Turtle()
 i = 1
 tim.speed('fastest')
+tim.setheading(225)
+tim.penup()
+tim.forward(300)
+tim.setheading(0)
+tim.pendown()
+
+x = int(tim.pos()[0])
+
 while i in range(11):
     for _ in range(11):
         tim.pendown()
         tim.dot(20, random.choice(rgb_list))
         tim.penup()
         tim.forward(50)
-    tim.setx(0)
+    tim.setx(x)
     tim.sety(int(tim.pos()[1]) + 50)
     i+=1
 
