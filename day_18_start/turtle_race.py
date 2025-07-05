@@ -30,5 +30,4 @@ while is_race_on:
         turtle.forward(rand_distance)
 
 
-print(user_bet)
 screen.exitonclick()
