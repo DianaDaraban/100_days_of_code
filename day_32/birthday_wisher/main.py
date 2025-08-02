@@ -37,5 +37,5 @@ for person in data_dict:
         with smtplib.SMTP('smtp.gmail.com') as connection:
             connection.starttls()
             connection.login(user=email, password=password)
-            connection.sendmail(from_addr=email, to_addrs='di_lut@yahoo.com', msg=f'Subject: Happy birhtday {person['name']}!\n\n{letters[index].replace('[NAME]',person['name'])}')
+            connection.sendmail(from_addr=email, to_addrs=person['email'], msg=f'Subject: Happy birhtday {person['name']}!\n\n{letters[index].replace('[NAME]',person['name'])}')
 
