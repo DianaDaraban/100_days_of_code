@@ -5,7 +5,6 @@ import random
 import pandas
 import smtplib
 
-from day_29.password_manager.generator import letters
 
 # 1. Update the birthdays.csv
 
