@@ -1,6 +1,8 @@
+from dotenv import load_dotenv
+load_dotenv()
+
 import requests
 import os
-from pyexpat.errors import messages
 from twilio.rest import Client
 
 api_key = '43b518eb2c6fc4073fc955d80b86134f'
@@ -8,6 +10,8 @@ account_sid = os.getenv("TWILIO_ACCOUNT_SID")
 auth_token = os.getenv("TWILIO_AUTH_TOKEN")
 lat_bucharest = 44.426765
 long_bucharest = 26.102537
+
+
 
 parameters={
     'lat': lat_bucharest,
