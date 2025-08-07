@@ -42,7 +42,7 @@ if diff_percentage >= 5:
     client = Client(account_sid, auth_token)
     for news in news_data:
         message = client.messages.create(
-            body=f"{STOCK}: {percentage_text}\nHeadline: {news['title']}\nBrief: {news['description']}\nLink: {news['url']}",
+            body=f"{STOCK}: {percentage_text}\nHeadline: {news['title']}\nBrief: {news['description']}",
             from_="+18585443785",
             to="+40723670508",
         )
